@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psi-sitemap-analyzer"
+version = "2.0.0"
+description = "Resumable, parallel PageSpeed Insights analysis for every URL in a sitemap"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+psi = "psi.cli:main"
+
+[tool.setuptools]
+packages = ["psi"]
